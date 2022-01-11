@@ -1,0 +1,14 @@
+.button{
+    font-family: 'Montserrat', sans-serif;           
+    background-color: rgb(32, 44, 65);
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.096),
+                3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button:active{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(32, 44, 65);
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.082),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(94 234 212);
+}

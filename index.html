@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Keyboard ~~ Sumanta</title>
+</head>
+<body x-data="data()" class="relative bg-slate-800 text-white">
+    <!-- Main Keyboard -->
+    <div class="absolute transform -translate-x-1/2 left-1/2">
+        <div class="flex space-x-3 justify-center mt-4">
+            <div @click="addQ()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">Q</div>
+            <div @click="addW()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">W</div>
+            <div @click="addE()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">E</div>
+            <div @click="addR()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">R</div>
+            <div @click="addT()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">T</div>
+            <div @click="addY()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">Y</div>
+            <div @click="addU()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">U</div>
+            <div @click="addI()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">I</div>
+            <div @click="addO()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">O</div>
+            <div @click="addP()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">P</div>
+        </div>
+        <div class="flex space-x-3 justify-center mt-2">
+            <div @click="addA()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">A</div>
+            <div @click="addS()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">S</div>
+            <div @click="addD()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">D</div>
+            <div @click="addF()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">F</div>
+            <div @click="addG()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">G</div>
+            <div @click="addH()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">H</div>
+            <div @click="addJ()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">J</div>
+            <div @click="addK()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">K</div>
+            <div @click="addL()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">L</div>
+        </div>
+        <div class="flex space-x-6 justify-center mt-2">
+            <div @click="addZ()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">Z</div>
+            <div @click="addX()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">X</div>
+            <div @click="addC()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">C</div>
+            <div @click="addV()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">V</div>
+            <div @click="addB()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">B</div>
+            <div @click="addN()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">N</div>
+            <div @click="addM()" class="h-16 w-16 rounded-lg button cursor-pointer justify-center items-center text-xl font-bold flex">M</div>
+        </div>
+        <div class="mt-5">
+            <input x-model="inp" class="text-slate-700 font-bold rounded-xl px-4 py-2 outline-none">
+        </div>
+    </div>
+</body>
+</html>
